@@ -1,0 +1,56 @@
+{
+  "$schema": "https://firebase.google.com/docs/firestore",
+  "entities": {
+    "providers": {
+      "collection": "providers",
+      "fields": {
+        "name": { "type": "string", "required": true },
+        "banglaName": { "type": "string", "required": false },
+        "primaryCategory": { "type": "string", "required": true },
+        "additionalCategories": { "type": "string", "required": false },
+        "contactNumber": { "type": "string", "required": true },
+        "additionalContact": { "type": "string", "required": false },
+        "locationArea": { "type": "string", "required": true },
+        "specificAddress": { "type": "string", "required": false },
+        "landmark": { "type": "string", "required": false },
+        "chargeEstimate": { "type": "string", "required": false },
+        "description": { "type": "string", "required": false },
+        "whatsappNumber": { "type": "string", "required": false },
+        "facebookUrl": { "type": "string", "required": false },
+        "mapCoordinates": { "type": "string", "required": false },
+        "workingHours": { "type": "string", "required": false },
+        "isVerified": { "type": "boolean", "required": true },
+        "isActive": { "type": "boolean", "required": true },
+        "createdAt": { "type": "timestamp", "required": false },
+        "updatedAt": { "type": "timestamp", "required": false }
+      }
+    },
+    "categories": {
+      "collection": "categories",
+      "fields": {
+        "name": { "type": "string", "required": true },
+        "banglaName": { "type": "string", "required": false },
+        "iconKey": { "type": "string", "required": false },
+        "displayOrder": { "type": "number", "required": false },
+        "isEnabled": { "type": "boolean", "required": true }
+      }
+    },
+    "location_areas": {
+      "collection": "location_areas",
+      "fields": {
+        "name": { "type": "string", "required": true },
+        "banglaName": { "type": "string", "required": false },
+        "displayOrder": { "type": "number", "required": false },
+        "isEnabled": { "type": "boolean", "required": true }
+      }
+    },
+    "admin_users": {
+      "collection": "admin_users",
+      "fields": {
+        "email": { "type": "string", "required": true },
+        "role": { "type": "string", "required": true },
+        "assignedAt": { "type": "timestamp", "required": true }
+      }
+    }
+  }
+}

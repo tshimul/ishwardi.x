@@ -1,0 +1,6 @@
+{
+  "name": "Ishwardi.X",
+  "description": "A complete local service directory for residents of Ishwardi, Bangladesh. Search services, contacts, categories, and manage local providers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
